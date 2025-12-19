@@ -111,7 +111,7 @@ def plot_correlation_heatmap(df: pd.DataFrame, out_path: PathLike) -> Path:
 
 def save_top_categories_tables(
     top_cats: Dict[str, pd.DataFrame],
-    out_dir: PathLike,
+    out_dir: PathLike, amount_of_top: int
 ) -> List[Path]:
     """
     Сохраняет top-k категорий по колонкам в отдельные CSV.

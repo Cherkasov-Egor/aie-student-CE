@@ -22,6 +22,17 @@ def _sample_df() -> pd.DataFrame:
     )
 
 
+def _new_eurus_df() -> pd.DataFrame:
+    return pd.DataFrame(
+        {
+            "id": [1, 2, 3, 3],
+            "age": [10, 10, 10, 10],
+            "height": [140, 150, 160, 170],
+            "city": ["A", "B", "A", None],
+        }
+    )
+
+
 def test_summarize_dataset_basic():
     df = _sample_df()
     summary = summarize_dataset(df)
@@ -59,3 +70,21 @@ def test_correlation_and_top_categories():
     city_table = top_cats["city"]
     assert "value" in city_table.columns
     assert len(city_table) <= 2
+
+
+def test_new_heuristic_has_constant_columns():
+    df = _new_eurus_df()
+    summary = summarize_dataset(df)
+    missing_df = missing_table(df)
+    flags = compute_quality_flags(summary, missing_df)
+    # в датасете существует константный столбец
+    assert flags["has_constant_columns"]
+
+
+def test_new_heuristics_suspitious_id_dublicate():
+    df = _new_eurus_df()
+    summary = summarize_dataset(df)
+    missing_df = missing_table(df)
+    flags = compute_quality_flags(summary, missing_df)
+    # в датасете существуют дубликаты идентификаторов
+    assert flags["has_suspicious_id_duplicates"]
