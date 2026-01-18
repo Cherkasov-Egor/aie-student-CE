@@ -1,0 +1,46 @@
+{
+  "results": [
+    {
+      "f1": 0.7076923076923077,
+      "recall": 0.5609756097560976,
+      "accuracy": 0.9772,
+      "roc_auc": 0.8860523102496485,
+      "model": "RandomForest"
+    },
+    {
+      "f1": 0.7435294117647059,
+      "recall": 0.6422764227642277,
+      "accuracy": 0.9782,
+      "roc_auc": 0.8854409295039523,
+      "model": "Stacking"
+    },
+    {
+      "f1": 0.5449275362318841,
+      "recall": 0.3821138211382114,
+      "accuracy": 0.9686,
+      "roc_auc": 0.8746686572881716,
+      "model": "AdaBoost"
+    },
+    {
+      "f1": 0.42857142857142855,
+      "recall": 0.2804878048780488,
+      "accuracy": 0.9632,
+      "roc_auc": 0.8345116307704935,
+      "model": "LogReg(scaled)"
+    },
+    {
+      "f1": 0.36436436436436437,
+      "recall": 0.7398373983739838,
+      "accuracy": 0.873,
+      "roc_auc": 0.832922895909649,
+      "model": "DecisionTree"
+    },
+    {
+      "f1": 0.0,
+      "recall": 0.0,
+      "accuracy": 0.9508,
+      "roc_auc": 0.5,
+      "model": "DummyClassifier(most_freq)"
+    }
+  ]
+}
