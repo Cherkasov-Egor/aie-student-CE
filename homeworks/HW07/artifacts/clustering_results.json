@@ -1,0 +1,26 @@
+{
+    "Dataset_01": {
+        "best_algo": "KMeans",
+        "metrics": {
+            "silhouette": 0.3356865366464507,
+            "db_index": 1.158003575253639,
+            "calinski": 7782.435063510727
+        }
+    },
+    "Dataset_02": {
+        "best_algo": "KMeans",
+        "metrics": {
+            "silhouette": 0.20456381674139035,
+            "db_index": 1.5035410371523026,
+            "calinski": 2080.5813562582603
+        }
+    },
+    "Dataset_03": {
+        "best_algo": "KMeans",
+        "metrics": {
+            "silhouette": 0.34783873742763594,
+            "db_index": 1.1777110807840552,
+            "calinski": 7791.3293325353725
+        }
+    }
+}
