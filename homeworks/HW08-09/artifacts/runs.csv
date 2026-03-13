@@ -1,0 +1,8 @@
+dataset,seed,experiment_id,model_summary,optimizer,lr,momentum,weight_decay,clip_value,epochs_trained,best_val_accuracy,best_val_loss
+EMNIST,42,E1,"Base MLP (no dropout, no batchnorm)",Adam,0.001,0.0,0.0,,20,0.8398492907801418,0.458320618140782
+EMNIST,42,E2,Dropout p=0.3,Adam,0.001,0.0,0.0,,20,0.8600177304964539,0.4210038405783633
+EMNIST,42,E3,BatchNorm,Adam,0.001,0.0,0.0,,20,0.8436170212765958,0.439567856966181
+EMNIST,42,E4,EarlyStopping + Best of E2/E3 + Gradient Clipping,Adam,0.001,0.0,0.0,1.0,20,0.8665780141843972,0.41270424309351766
+EMNIST,42,O1,"Adam, lr=1e-1",Adam,0.1,0.0,0.0,,8,0.021852836879432624,3.8637322760642845
+EMNIST,42,O2,"Adam, lr=1e-5",Adam,1e-05,0.0,0.0,,8,0.5952570921985816,1.5749644710662518
+EMNIST,42,O3,"SGD, lr=1e-2, momentum=0.9",SGD,0.01,0.9,0.0001,,10,0.8344414893617021,0.5005070600526552

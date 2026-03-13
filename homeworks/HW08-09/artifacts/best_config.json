@@ -1,0 +1,16 @@
+{
+    "hidden_sizes": [
+        512,
+        256
+    ],
+    "dropout": 0.3,
+    "use_batchnorm": false,
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "momentum": 0.0,
+    "weight_decay": 0.0,
+    "epochs": 20,
+    "patience": 5,
+    "use_scheduler": true,
+    "clip_value": 1.0
+}
