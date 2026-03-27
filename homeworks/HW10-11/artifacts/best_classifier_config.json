@@ -1,0 +1,11 @@
+{
+    "dataset": "STL10",
+    "architecture": "C3",
+    "transforms": "resnet",
+    "seed": 42,
+    "epochs": 20,
+    "lr": 0.001,
+    "batch_size": 64,
+    "best_val_accuracy": 0.951,
+    "test_accuracy": 0.945375
+}
