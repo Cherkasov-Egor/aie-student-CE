@@ -1,0 +1,5 @@
+experiment_id,task,dataset,seed,split_summary,window_size,horizon,model_summary,features_summary,scaler,optimizer,lr,epochs_trained,best_val_mae,best_val_rmse,best_val_mape,test_mae,test_rmse,test_mape,notes
+B1,forecasting,S12-hw-dataset,42,70/15/15 temporal,,1,Naive (last value),none,none,,,,6.438348765432099,8.197825187733756,4.393292074813444,,,,validation only
+B2,forecasting,S12-hw-dataset,42,70/15/15 temporal,7,1,Moving Average,rolling mean window 7,none,,,,12.693551587301586,15.206149791684627,8.811359200942084,,,,validation only
+B3,forecasting,S12-hw-dataset,42,70/15/15 temporal,,1,Ridge regression,"lags, rolling stats, calendar",StandardScaler,,,,6.056134714586121,7.529930195837664,4.024267415418574,,,,validation only
+R1,forecasting,S12-hw-dataset,42,70/15/15 temporal,7,1,"GRU (2 layers, hidden 64)",only target,StandardScaler (target only),Adam,0.001,2,0.34957462549209595,0.4315929645445282,134.43734645843506,0.3601088523864746,0.4526326365528568,58.72909426689148,best model

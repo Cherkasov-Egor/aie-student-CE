@@ -1,0 +1,13 @@
+{
+    "input_size": 1,
+    "hidden_size": 64,
+    "num_layers": 2,
+    "dropout": 0.2,
+    "window_size": 7,
+    "horizon": 1,
+    "batch_size": 32,
+    "lr": 0.001,
+    "seed": 42,
+    "scaler_mean": 128.20576058201058,
+    "scaler_scale": 18.48154222978581
+}
