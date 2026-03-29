@@ -15,7 +15,7 @@ C1,classification,STL10,42,"SimpleCNN(
     (11): AdaptiveAvgPool2d(output_size=(1, 1))
   )
   (fc): Linear(in_features=256, out_features=10, bias=True)
-)",Adam,0.001,20,0.521,,,,,
+)",Adam,0.001,20,0.552,,,,,
 C2,classification,STL10,42,"SimpleCNN(
   (conv_layers): Sequential(
     (0): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
@@ -32,7 +32,7 @@ C2,classification,STL10,42,"SimpleCNN(
     (11): AdaptiveAvgPool2d(output_size=(1, 1))
   )
   (fc): Linear(in_features=256, out_features=10, bias=True)
-)",Adam,0.001,20,0.547,,,,,
+)",Adam,0.001,20,0.514,,,,,
 C3,classification,STL10,42,"ResNet(
   (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
   (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
@@ -116,7 +116,7 @@ C3,classification,STL10,42,"ResNet(
   )
   (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
   (fc): Linear(in_features=512, out_features=10, bias=True)
-)",Adam,0.001,20,0.951,0.945375,,,,
+)",Adam,0.001,20,0.736,,,,,
 C4,classification,STL10,42,"ResNet(
   (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
   (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
@@ -200,6 +200,6 @@ C4,classification,STL10,42,"ResNet(
   )
   (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
   (fc): Linear(in_features=512, out_features=10, bias=True)
-)",Adam,0.001,20,0.932,,,,,
-V1,detection,VOC2007,42,fasterrcnn_resnet50_fpn,,,0,,,0.4444444444444444,0.8,0.8553487948011622,score_threshold=0.3
-V2,detection,VOC2007,42,fasterrcnn_resnet50_fpn,,,0,,,0.75,0.6,0.8796474247239732,score_threshold=0.7
+)",Adam,0.001,20,0.923,0.930125,,,,
+V1,detection,VOCDetection,42,fasterrcnn_resnet50_fpn,,,0,,,0.4444444444444444,0.8,0.8553489526411054,score_threshold=0.3
+V2,detection,VOCDetection,42,fasterrcnn_resnet50_fpn,,,0,,,0.75,0.6,0.8796474715449603,score_threshold=0.7
